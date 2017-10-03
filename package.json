@@ -1,0 +1,46 @@
+{
+  "name": "numerickeyboard",
+  "version": "1.0.0",
+  "description": "h5 keyboard javascirpt",
+  "main": "mian",
+  "scripts": {
+    "dev": "webpack-dev-server --port 9090 --inline --hot  --host 0.0.0.0",
+    "build": "webpack --config webpack.prod.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cg-miracle/numericKeyBoard.git"
+  },
+  "keywords": [
+    "keyboard",
+    "h5",
+    "numeric"
+  ],
+  "author": "Miracle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cg-miracle/numericKeyBoard/issues"
+  },
+  "homepage": "https://github.com/cg-miracle/numericKeyBoard#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "*",
+    "handlebars": "^1.3.0",
+    "handlebars-loader": "^1.1.3",
+    "html-loader": "^0.4.0",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
