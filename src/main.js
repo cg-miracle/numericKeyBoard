@@ -1,4 +1,4 @@
 import Keyboard from './kb/keyboard'
-console.log( Keyboard )
+import './kb/keyboard.scss'
 
 export default Keyboard

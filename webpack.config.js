@@ -22,8 +22,8 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
-				test: /\.styl$/,
-				loader: 'style-loader!css-loader!scss-loader'
+				test: /\.scss$/,
+				loader: 'style-loader!css-loader!sass-loader'
 			},
 			{
 				test: /\.handlebars$/,

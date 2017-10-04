@@ -1,0 +1,27 @@
+.cg-keyboard {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .kb-wrap {
+        display: flex;
+        .column {
+            width: 25%;
+            flex-direction: column;
+            .key-item {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                font-size: 23px;
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                &.kb-del,
+                &.kb-confirm {
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

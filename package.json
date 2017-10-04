@@ -2,9 +2,8 @@
   "name": "numerickeyboard",
   "version": "1.0.0",
   "description": "h5 keyboard javascirpt",
-  "main": "mian",
   "scripts": {
-    "dev": "webpack-dev-server --port 9090 --inline --hot  --host 0.0.0.0",
+    "dev": "webpack-dev-server --port 9090 --inline --hot",
     "build": "webpack --config webpack.prod.conf.js"
   },
   "repository": {
@@ -36,8 +35,9 @@
     "handlebars": "^1.3.0",
     "handlebars-loader": "^1.1.3",
     "html-loader": "^0.4.0",
-    "scss": "^0.2.4",
-    "scss-loader": "^0.0.1",
+    "node-sass": "^4.5.3",
+    "sass": "^1.0.0-beta.2",
+    "sass-loader": "^6.0.6",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.11",
