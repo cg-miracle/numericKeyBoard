@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="reset.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
-    <script src="assets/keyboard.js"></script>
-    <script>
-        var kb = new Keyboard()
-    </script>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="reset.css" rel="stylesheet">
+</head>
+
+<body>
+    <input type="text" id="demo" placeholder="请输入数字">
+</body>
+<script src="assets/keyboard.js"></script>
+<script>
+    var kb = new Keyboard({
+        maxDigit: 5
+    })
+    var demo = document.querySelector('#demo')
+    demo.addEventListener('click', function () {
+        kb.show()
+    })
+    kb.on('kb.click', function (numbers) {
+        console.log(numbers)
+        demo.setAttribute('value', numbers.join(''))
+    })
+    kb.on('kb.confirm', function (numbers) {
+        console.log('confirm回调')
+    })
+    kb.on('kb.hide', function (numbers) {
+        console.log('hide回调')
+    })
+</script>
+
 </html>

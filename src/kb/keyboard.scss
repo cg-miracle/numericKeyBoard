@@ -1,8 +1,15 @@
 .cg-keyboard {
+    &.hide {
+        transform: translateY(200px)
+    }
+    &.show {
+        transform: translateY(0)
+    }
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
+    transition: all .25s;
     .kb-wrap {
         display: flex;
         .column {
@@ -17,9 +24,20 @@
                 font-size: 23px;
                 border-top: 1px solid #ddd;
                 border-right: 1px solid #ddd;
+                &.active {
+                    background: #ddd;
+                }
+                img {
+                    width: 30px;
+                }
                 &.kb-del,
                 &.kb-confirm {
                     height: 50%;
+                }
+                &.kb-confirm {
+                    color: #fff;
+                    background-color: #0F88EB;
+                    border-top: 1px solid #0F88EB;
                 }
             }
         }
